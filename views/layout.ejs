@@ -43,36 +43,7 @@
 
     <body>
 
-
-        <div class="container-fluid">
-            <div class="col-md-8 col-md-offset-2 task-create">
-                <h1>Sails-Todo-App</h1>
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <label for="">Task Name</label>
-                        <input type="text" class="form-control" placeholder="Whats in your mind." />
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-success">Create Task</button>
-                    </div>
-                </form>
-                <div class="task-list">
-                    <div class="row">
-                        <div class="col-md-8">
-
-                        </div>
-                        <div class="col-md-2">
-                            <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Done</button>
-                        </div>
-                        <div class="col-md-2">
-                            <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</button>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
+      <div ui-view></div>
         <!--
             Client-side Templates
             ========================
@@ -95,7 +66,7 @@
         -->
 
         <!--TEMPLATES-->
-
+        
         <!--TEMPLATES END-->
 
 
@@ -126,7 +97,9 @@
         <script src="/bower_components/jquery/dist/jquery.js"></script>
         <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script src="/bower_components/angular/angular.js"></script>
+        <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
         <script src="/app/todoApp.module.js"></script>
+        <script src="/app/taskCreateCtrl.js"></script>
         <!--SCRIPTS END-->
     </body>
 </html>

@@ -34,7 +34,12 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+  'POST /api/v1/task':{
+      controller: 'TaskController',
+      action : 'createTask'
   }
+
 
   /***************************************************************************
   *                                                                          *
